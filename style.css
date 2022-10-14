@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+.jebote{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, hsla(161, 75%, 61%, 1) 0%, hsla(261, 75%, 61%, 1) 100%); 
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);align-items: center;
+}
+
+main{
+    
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+}
+
+.by{
+    transform: translateY(-120%);
+    color: white;
+    background-color: black;
+    padding: 30px;
+}
+.by i{
+    transition: .4s;
+}
+.by i:hover{
+    rotate: 360deg;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid black;
+    margin: 30px;
+}
+.flex{
+    display: flex;
+}
