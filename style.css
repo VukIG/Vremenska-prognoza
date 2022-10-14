@@ -55,3 +55,10 @@ input{
 .flex{
     display: flex;
 }
+.search i{
+    transition: .4s;
+}
+.search i:hover{
+    transform: scale(1.2);
+    rotate: 360deg;
+}
