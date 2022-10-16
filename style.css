@@ -28,7 +28,7 @@ main{
 }
 
 .by{
-    transform: translateY(-120%);
+    transform: translateY(-80%);
     color: white;
     background-color: black;
     padding: 30px;
@@ -61,4 +61,30 @@ input{
 .search i:hover{
     transform: scale(1.2);
     rotate: 360deg;
+}
+.forbiddenpre{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+.rock-it{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+.sevendays{
+    border: 1px solid black;
+    margin: 15px;
+    padding: 10px;
+    transition: .4s;
+}
+.sevendays:hover{
+    background-color: black;
+    color: white;
+    
 }
