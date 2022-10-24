@@ -16,7 +16,6 @@ let ukey='65c037a7b2d9d4e1b8b133f4173952d7';
 let list=[];
 let dani=[];
 
-
 function sortstuff() {
     for (let i = 0; i < list.length; i++) {
         let dan=document.createElement('div');
@@ -31,10 +30,9 @@ function sortstuff() {
         future.append(dan);
         for (let j = 0; j < 8; j++) {
             let sat=i*8+j;
-            console.log(sat)
-            console.log(list[sat].temp);
             let polje=document.createElement('p');
-            polje.innerHTML=`Temperature at ${ j }h is` + list[sat].temp;
+            polje.innerHTML='Temperature at ' +j + 'h is' + list.sat.temp;
+            dan.appendChild(polje);
         }
     }
 }
@@ -69,13 +67,10 @@ function ussrsrbija() {
                 saljiponovo();
             });
         }
-        
-        
     });
 }
 
 function fetchapi(city,isocod) {
-    let datverda;
     fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + city +', ,'+ + ',' + isocod + '&appid=' + ukey)
     .then(response => response.json())
     .then( data => {
@@ -84,7 +79,6 @@ function fetchapi(city,isocod) {
         ussrsrbija(lat,lon);
         console.log(data)
     });
-    
 }
 
 search.addEventListener("click",function () {
@@ -95,6 +89,5 @@ search.addEventListener("click",function () {
         nameOfCity.innerHTML=city;
         min.innerHTML= 'Min temperature:';
         max.innerHTML= 'Max temperature:';
-        console.log('http://api.openweathermap.org/geo/1.0/direct?q=' + city +','+ isocode + '&appid=' + ukey);
     }
 });
